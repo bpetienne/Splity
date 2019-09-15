@@ -33,7 +33,6 @@
 		141F670C1F4A3FDA00367086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F670A1F4A3FDA00367086 /* ButtonTableViewCell.swift */; };
 		141F670D1F4A3FDA00367086 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F670B1F4A3FDA00367086 /* ButtonTableViewCell.xib */; };
 		141FCBE81EAC04500038EE60 /* CostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141FCBE71EAC04500038EE60 /* CostTableViewController.swift */; };
-		142012251F3A3CDD00B049DE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142012241F3A3CDD00B049DE /* CloudKit.framework */; };
 		1420DD601F49A680006192B0 /* TravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420DD5F1F49A680006192B0 /* TravellerViewController.swift */; };
 		1422B0421F4E243D00596DC4 /* TripPeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422B0401F4E243D00596DC4 /* TripPeriodTableViewCell.swift */; };
 		1422B0431F4E243D00596DC4 /* TripPeriodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1422B0411F4E243D00596DC4 /* TripPeriodTableViewCell.xib */; };
@@ -128,7 +127,6 @@
 		141F670B1F4A3FDA00367086 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
 		141FCBE71EAC04500038EE60 /* CostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostTableViewController.swift; sourceTree = "<group>"; };
 		142012221F3A3CC300B049DE /* CostTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CostTracker.entitlements; sourceTree = "<group>"; };
-		142012241F3A3CDD00B049DE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		1420DD5F1F49A680006192B0 /* TravellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravellerViewController.swift; sourceTree = "<group>"; };
 		1422B0401F4E243D00596DC4 /* TripPeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPeriodTableViewCell.swift; sourceTree = "<group>"; };
 		1422B0411F4E243D00596DC4 /* TripPeriodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripPeriodTableViewCell.xib; sourceTree = "<group>"; };
@@ -172,6 +170,7 @@
 		14C142071F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonAsLabelTableViewCell.xib; sourceTree = "<group>"; };
 		14C2FBF520890C2800B76FA6 /* MainTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTripsViewController.swift; sourceTree = "<group>"; };
 		F739BF9A232EA200002919BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F739BF9C232EA621002919BA /* Splity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Splity.entitlements; sourceTree = "<group>"; };
 		F756948D21C5A60B002FAA0A /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		F76AFF612120418B00A38CDE /* CostAnalysisViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostAnalysisViewModelItem.swift; sourceTree = "<group>"; };
 		F76AFF632120447F00A38CDE /* CostSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostSectionView.swift; sourceTree = "<group>"; };
@@ -186,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142012251F3A3CDD00B049DE /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +232,7 @@
 		1419F96A1E92E21D00B7E464 /* Splity */ = {
 			isa = PBXGroup;
 			children = (
+				F739BF9C232EA621002919BA /* Splity.entitlements */,
 				F756948C21C5A5F0002FAA0A /* Services */,
 				142EC2622095E3FF00B607F9 /* Model */,
 				14288FB32090A127003B9F5E /* TEST_NAVIGATION */,
@@ -295,7 +294,6 @@
 		142012231F3A3CDD00B049DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				142012241F3A3CDD00B049DE /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
