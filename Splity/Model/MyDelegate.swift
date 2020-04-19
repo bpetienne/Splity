@@ -27,10 +27,10 @@ protocol NewTravellerViewModelDeletage{
 protocol ModelDelegate: Codable {
     func tripDidFinish( trip: Trip)
     func tryRemoveTraveller(travellerId: String)
-    var allTravellers: [String:Traveller] { get }
-    func getTraveller(id: String) -> Traveller?
+    var allTravellers: [String:Traveler] { get }
+    func getTraveller(id: String) -> Traveler?
     func travellerIsUsed(travellerId: String) -> Bool
-    func save(traveller: Traveller)
+    func save(traveller: Traveler)
 }
 
 
@@ -43,15 +43,15 @@ protocol ModelManagerProtocol  {
     func update(trip: Trip)
     func delete(trip: Trip)
     
-    func add(traveler: Traveller)
-    func update(traveler: Traveller)
-    func delete(traveler: Traveller)
+    func add(traveler: Traveler)
+    func update(traveler: Traveler)
+    func delete(traveler: Traveler)
 }
 
 protocol DataManagerProtocol {
     func save(trip: Trip)
     func save(cost: Cost)
-    func save(traveler: Traveller)
+    func save(traveler: Traveler)
     
     func initialize()
     //Save locally

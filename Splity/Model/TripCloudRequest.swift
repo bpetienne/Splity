@@ -256,7 +256,7 @@ class TripCloudRequest: NSObject{
     var delegate: ModelDelegate1?
     var items: [Trip] = []
     var costs: [String:Cost] = [:]
-    var travellers: [String:Traveller] = [:]
+    var travellers: [String:Traveler] = [:]
     
     
 

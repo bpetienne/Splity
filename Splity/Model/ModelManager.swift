@@ -34,15 +34,15 @@ class ModelManager: ModelManagerProtocol {
         
     }
     
-    func add(traveler: Traveller){
+    func add(traveler: Traveler){
         
     }
     
-    func update(traveler: Traveller){
+    func update(traveler: Traveler){
         
     }
     
-    func delete(traveler: Traveller){
+    func delete(traveler: Traveler){
         
     }
 }

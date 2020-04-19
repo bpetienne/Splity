@@ -18,8 +18,8 @@ class Model: Codable , ModelDelegate{
     var trips = [Trip]()
     var tripsUUID = [String]()
     var deleteTripsUUID = [String]()
-    var travellers = [String:Traveller]()
-    var travellersByNickname  = [String:Traveller]()
+    var travellers = [String:Traveler]()
+    var travellersByNickname  = [String:Traveler]()
     var modelId: String = UUID().uuidString
     var appId: String = UUID().uuidString
     var selectedTrip: Trip?
@@ -28,7 +28,7 @@ class Model: Codable , ModelDelegate{
 
    // var saveCompletion: (()->Void)? = nil
     
-    var allTravellers: [String:Traveller] {
+    var allTravellers: [String:Traveler] {
         return travellers
     }
     
@@ -207,7 +207,7 @@ class Model: Codable , ModelDelegate{
         return nil
     }
 
-    func getTraveller(id: String) -> Traveller?{
+    func getTraveller(id: String) -> Traveler?{
         return travellers[id]
     }
     
@@ -226,7 +226,7 @@ class Model: Codable , ModelDelegate{
         }
     }
     
-    func save(traveller : Traveller) {
+    func save(traveller : Traveler) {
         travellers[traveller.travellerId] = traveller
         travellersByNickname[traveller.nickname] = traveller
         self.saveModelInJson()
@@ -289,7 +289,7 @@ class Model: Codable , ModelDelegate{
         saveModelInJson()
     }
     
-    func addImportedTraveller(travellers newTravellers: [String:Traveller]?){
+    func addImportedTraveller(travellers newTravellers: [String:Traveler]?){
         if let newTravellers = newTravellers {
             for traveller in newTravellers{
                 if !travellers.keys.contains(traveller.key){

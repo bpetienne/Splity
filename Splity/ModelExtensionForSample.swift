@@ -63,8 +63,8 @@ extension Model{
     
     
     func createDefautlTravellers(){
-        let benoit = Traveller(firstName: "Benoit", lastName: "Etienne", email: "bp.etienne@gmail.com", travellerId: UUID().uuidString)
-        let farida = Traveller(firstName: "Farida", lastName: "Radjabaly", email: "fradjabaly@gmail.com", travellerId: UUID().uuidString)
+        let benoit = Traveler(firstName: "Benoit", lastName: "Etienne", email: "bp.etienne@gmail.com", travellerId: UUID().uuidString)
+        let farida = Traveler(firstName: "Farida", lastName: "Radjabaly", email: "fradjabaly@gmail.com", travellerId: UUID().uuidString)
         
         travellers[benoit.travellerId] = benoit
         travellers[farida.travellerId] = farida

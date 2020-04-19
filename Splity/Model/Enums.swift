@@ -91,3 +91,17 @@ enum ConcernedPeople: Int, NSCodableEnum, Codable {
         self = .Group
     }
 }
+
+enum ParticipationType: Int, NSCodableEnum, Codable {
+    case Ratio
+    case Amount
+    
+    func int()->Int {
+        return self.rawValue
+    }
+    
+    init(defaultValue:Any) {
+        self = .Ratio
+    }
+}
+

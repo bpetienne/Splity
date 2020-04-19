@@ -59,7 +59,7 @@ class Trip:  Codable {
     var isModified = false
     var tripId : String = UUID().uuidString
     var imageData: Data?
-    var travellers: [String:Traveller] = [String:Traveller]()
+    var travellers: [String:Traveler] = [String:Traveler]()
 
     var modelDelegate: ModelDelegate? = nil
 
@@ -104,7 +104,7 @@ class Trip:  Codable {
 //        // ...
 //    }
     
-    init?(beginDate: Date, endDate:Date, currencies: [String], travellers: [Traveller], countries: [String], imageData: Data?, mainCurrency: String?, mainCountry: String?, costs: [Cost], tripId: String?, travellerIds: [String], note: String?) {
+    init?(beginDate: Date, endDate:Date, currencies: [String], travellers: [Traveler], countries: [String], imageData: Data?, mainCurrency: String?, mainCountry: String?, costs: [Cost], tripId: String?, travellerIds: [String], note: String?) {
 
         self.beginDate = beginDate
         self.endDate = endDate
@@ -118,7 +118,7 @@ class Trip:  Codable {
         }
         self.note = note
         self.imageData  = imageData
-        self.travellers = [String:Traveller]()
+        self.travellers = [String:Traveler]()
     
         recomputeCosts()
     }
@@ -133,7 +133,7 @@ class Trip:  Codable {
         self.costs = [Cost]()
         self.note = ""
         self.imageData = nil
-        self.travellers = [String:Traveller]()
+        self.travellers = [String:Traveler]()
 
         recomputeCosts()
     }
@@ -148,7 +148,7 @@ class Trip:  Codable {
         self.costs = [Cost]()
         self.note = ""
         self.imageData = nil
-        self.travellers = [String:Traveller]()
+        self.travellers = [String:Traveler]()
         modelDelegate = model
         
         recomputeCosts()
@@ -281,11 +281,11 @@ class Trip:  Codable {
         return false
     }
     
-    func add(traveller: Traveller) {
+    func add(traveller: Traveler) {
         modelDelegate?.save(traveller: traveller)
     }
     
-    func getTraveller(id: String) -> Traveller? {
+    func getTraveller(id: String) -> Traveler? {
         return modelDelegate?.getTraveller(id: id)
     }
     

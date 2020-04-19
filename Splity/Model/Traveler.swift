@@ -11,7 +11,7 @@ import os.log
 import CloudKit
 
 
-class Traveller:  Codable  {
+class Traveler:  Codable  {
 
     struct CloudKey {
         static let lastName = "LastName"

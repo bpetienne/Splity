@@ -17,7 +17,7 @@ extension Model {
     func AddNewYorkTrip() {
         let photo1 = UIImagePNGRepresentation(UIImage(named: "meal1")!)
         
-        let travellers = [Traveller("Benoit", nickname:"BE"), Traveller("Farida", nickname:"FR")]
+        let travellers = [Traveler("Benoit", nickname:"BE"), Traveler("Farida", nickname:"FR")]
         let costLoaderService = CostLoaderService()
         
         let costs = costLoaderService.importCosts()
@@ -37,7 +37,7 @@ extension Model {
         let photo2 = UIImagePNGRepresentation(UIImage(named: "meal2")!)
         let photo3 = UIImagePNGRepresentation(UIImage(named: "meal3")!)
         
-        let travellers = [Traveller("Benoit", nickname:"BE"), Traveller("Farida", nickname:"FR")]
+        let travellers = [Traveler("Benoit", nickname:"BE"), Traveler("Farida", nickname:"FR")]
         
         guard let trip1 = Trip(beginDate: Date(), endDate: Date(), currencies: ["EUR", "USD"], travellers: travellers, countries: ["New York"], imageData: photo1, mainCurrency: "USD", mainCountry: "New York", costs: loadSampleCosts1(), tripId: nil, travellerIds: [String](), note: "") else {
             fatalError("Unable to instantiate trip1")
@@ -58,7 +58,7 @@ extension Model {
     
     
      func loadSampleCosts1() -> [Cost] {
-        guard let cost1 = Cost(name: "Dépense 1 - Trip 1",  amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
+        guard let cost1 = Cost(name: "Dépense 1 - Trip 1",  amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
             fatalError("Unable to instantiate meal1")
         }
         
@@ -70,11 +70,11 @@ extension Model {
     
     
      func loadSampleCosts2() -> [Cost] {
-        guard let cost1 = Cost(name: "Dépense 1 - Trip 2", amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
+        guard let cost1 = Cost(name: "Dépense 1 - Trip 2", amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
             fatalError("Unable to instantiate meal1")
         }
         
-        guard let cost2 = Cost(name: "Dépense 2 - Trip 2",  amount: 5.0, category: .Food, payment: .Cash, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
+        guard let cost2 = Cost(name: "Dépense 2 - Trip 2",  amount: 5.0, category: .Food, payment: .Cash, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
             fatalError("Unable to instantiate meal2")
         }
         
@@ -85,15 +85,15 @@ extension Model {
     
     
      func loadSampleCosts3() -> [Cost] {
-        guard let cost1 = Cost(name: "Dépense 1 - Trip 3", amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
+        guard let cost1 = Cost(name: "Dépense 1 - Trip 3", amount: 24.5, category: .Transport, payment: .Cash, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
             fatalError("Unable to instantiate meal1")
         }
         
-        guard let cost2 = Cost(name: "Dépense 3 - Trip 3", amount: 5.0, category: .Food, payment: .Cash, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
+        guard let cost2 = Cost(name: "Dépense 3 - Trip 3", amount: 5.0, category: .Food, payment: .Cash, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Group, spotEuro: 1) else {
             fatalError("Unable to instantiate meal2")
         }
         
-        guard let cost3 = Cost(name: "Dépense 3 - Trip 3",  amount: 15.0, category: .Activity, payment: .Card, date: Date(), buyer: Traveller("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Single, spotEuro: 1) else {
+        guard let cost3 = Cost(name: "Dépense 3 - Trip 3",  amount: 15.0, category: .Activity, payment: .Card, date: Date(), buyer: Traveler("Benoit", nickname:"BE"), currency: "EUR", concernedPeople: .Single, spotEuro: 1) else {
             fatalError("Unable to instantiate meal2")
         }
         

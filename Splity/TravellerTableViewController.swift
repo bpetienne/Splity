@@ -15,7 +15,7 @@ extension TravellerTableViewController: NewTravellerViewModelDeletage{
     
     func addNewTraveller(sender: UIViewController, travellerViewModel:TravellerViewModel? ){
         if let traveller = travellerViewModel{
-            let newTraveller = Traveller( firstName:traveller.firstName ?? "", lastName:traveller.lastName ?? "", email:traveller.email ?? "",travellerId: traveller.travellerId)
+            let newTraveller = Traveler( firstName:traveller.firstName ?? "", lastName:traveller.lastName ?? "", email:traveller.email ?? "",travellerId: traveller.travellerId)
             trip.add(traveller: newTraveller)
             
             let newSelectTravellerViewModel = SelectTravellerViewModel(name: newTraveller.name, id: newTraveller.travellerId, isSelected: true)

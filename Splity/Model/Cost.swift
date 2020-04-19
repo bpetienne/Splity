@@ -52,7 +52,7 @@ class Cost: Codable {
     }
     //MARK: Initialization
     
-    init?(name: String,  amount: Double, category: Category?, payment: Payment, date: Date, buyer: Traveller, currency: String, concernedPeople: ConcernedPeople, spotEuro: Double) {
+    init?(name: String,  amount: Double, category: Category?, payment: Payment, date: Date, buyer: Traveler, currency: String, concernedPeople: ConcernedPeople, spotEuro: Double) {
         
         // Initialization should fail if there is no name.
         guard !name.isEmpty else {

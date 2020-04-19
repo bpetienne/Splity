@@ -67,7 +67,7 @@ class DataManager: DataManagerProtocol {
         
     }
     
-    func save(traveler: Traveller){
+    func save(traveler: Traveler){
         
     }    
 }

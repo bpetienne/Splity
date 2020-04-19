@@ -20,7 +20,7 @@ class TravellerViewModel
         
     }
     
-    init(traveller: Traveller){
+    init(traveller: Traveler){
         firstName = traveller.firstName
         lastName = traveller.lastName
         email = traveller.email
