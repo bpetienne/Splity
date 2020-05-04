@@ -1,5 +1,5 @@
 //
-//  CostModel.swift
+//  CostDataModel.swift
 //  Splity
 //
 //  Created by Benoit ETIENNE on 12/04/2020.
@@ -11,36 +11,25 @@ import os.log
 import CloudKit
 
 
-class CostModel: BaseModel{
+class CostDataModel: BaseDataModel{
     
     //MARK: Properties
-    var name: String
-    var amount: Double
-    var date: Date
+    var name: String?
+    var amount: Double?
+    var date: Date?
     var categoryType: Category?
-    var paymentType: Payment
-    var costType: CostType = CostType.Expenditure
-    var currencyCode: String
-    var currencyRateToEuro: Double
-    var payedBy: [UUID]
-    var payedFor: [UUID]
-    var tripId : UUID
+    var paymentType: Payment?
+    var costType: CostType?
+    var currencyCode: String?
+    var currencyRateToEuro: Double?
+    var payedBy: [UUID] = [UUID]()
+    var payedFor: [UUID] = [UUID]()
+    var tripId : UUID?
     
-    //MARK: Initialization
-    init?(name: String,  amount: Double, categoryType: Category?, date: Date, paymentType: Payment, costType: CostType, currencyCode: String,currencyRateToEuro: Double, payedBy: [UUID], payedFor: [UUID], tripId: UUID) {
-        
-        self.name = name
-        self.amount = amount
-        self.date = date
-        self.categoryType = categoryType
-        self.paymentType = paymentType
-        self.costType = costType
-        self.currencyCode = currencyCode
-        self.currencyRateToEuro = currencyRateToEuro
-        self.payedBy = payedBy
-        self.payedFor = payedFor
-        self.tripId = tripId
-        super.init()
+   
+    override init(id: UUID)
+    {
+        super.init(id: id)
     }
     
     //MARK: Local Repository
@@ -58,6 +47,22 @@ class CostModel: BaseModel{
         case tripId
     }
     
+    override func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encode(amount, forKey: .amount)
+        try container.encode(date, forKey: .date)
+        try container.encode(categoryType?.int(), forKey: .categoryType)
+        try container.encode(paymentType?.int(), forKey: .paymentType)
+        try container.encode(costType?.int(), forKey: .costType)
+        try container.encode(currencyCode, forKey: .currencyCode)
+        try container.encode(currencyRateToEuro, forKey: .currencyRateToEuro)
+        try container.encode(payedBy, forKey: .payedBy)
+        try container.encode(payedFor, forKey: .payedFor)
+        try container.encode(tripId, forKey: .tripId)
+        try super.encode(to: encoder)
+    }
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
@@ -108,6 +113,8 @@ class CostModel: BaseModel{
     }
     
     override func fromRecord(record: CKRecord) {
+        super.fromRecord(record: record)
+        
         if let data = record[RemoteKey.name] as? String {
             self.name = data
         }
@@ -165,22 +172,45 @@ class CostModel: BaseModel{
     
     override func fillRecord(record: CKRecord) {
         
-        record[RemoteKey.name] = self.name as CKRecordValue
-        record[RemoteKey.amount] = self.amount as CKRecordValue
-        record[RemoteKey.date] = self.date as CKRecordValue
-        record[RemoteKey.paymentType] = self.paymentType.int() as CKRecordValue
-        record[RemoteKey.costType] = self.costType.int() as CKRecordValue
+        super.fillRecord(record: record)
+        
+        if let name = self.name {
+            record[RemoteKey.name] = name as CKRecordValue
+        }
+      
+        if let amount = self.amount {
+            record[RemoteKey.amount] = amount as CKRecordValue
+        }
+        if let date = self.date {
+            record[RemoteKey.date] = date as CKRecordValue
+        }
+        if let paymentType = self.paymentType {
+            record[RemoteKey.paymentType] = paymentType.int() as CKRecordValue
+        }
+        if let costType = self.costType {
+            record[RemoteKey.costType] = costType.int() as CKRecordValue
+        }
+        
         if let categoryType = self.categoryType {
             record[RemoteKey.categoryType] = categoryType.int() as CKRecordValue
         }
-        record[RemoteKey.currencyCode] = self.currencyCode as CKRecordValue
-        record[RemoteKey.currencyRateToEuro] = self.currencyRateToEuro as CKRecordValue
+        if let currencyCode = self.currencyCode {
+            record[RemoteKey.currencyCode] = currencyCode as CKRecordValue
+        }
+        if let currencyRateToEuro = self.currencyRateToEuro {
+            record[RemoteKey.currencyRateToEuro] = currencyRateToEuro as CKRecordValue
+        }
+        
         record[RemoteKey.payedBy] = self.payedBy.map{$0.uuidString} as CKRecordValue
         record[RemoteKey.payedFor] = self.payedFor.map{$0.uuidString} as CKRecordValue
-        record[RemoteKey.tripId] = self.tripId.uuidString as CKRecordValue
-        let tripRecordId = CKRecordID(recordName: self.tripId.uuidString, zoneID: CKRecordZone(zoneName: CloudKitName.costTrackerCustomZone).zoneID)
-        let tripReference = CKReference(recordID: tripRecordId, action: CKReferenceAction.deleteSelf)
-        record[RemoteKey.tripReference] = tripReference as CKRecordValue
+        if let tripId = self.tripId {
+            record[RemoteKey.tripId] = tripId.uuidString as CKRecordValue
+            let tripRecordId = CKRecordID(recordName: tripId.uuidString, zoneID: CKRecordZone(zoneName: CloudKitName.costTrackerCustomZone).zoneID)
+            let tripReference = CKReference(recordID: tripRecordId, action: CKReferenceAction.deleteSelf)
+            record[RemoteKey.tripReference] = tripReference as CKRecordValue
+            
+        }
+        
         
     }
     

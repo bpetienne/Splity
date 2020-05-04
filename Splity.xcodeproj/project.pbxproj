@@ -7,59 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1411DFCA1F34C35800BBA9E0 /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411DFC81F34C35800BBA9E0 /* CostTableViewCell.swift */; };
-		1411DFCB1F34C35800BBA9E0 /* MyCostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1411DFC91F34C35800BBA9E0 /* MyCostTableViewCell.xib */; };
-		1411DFCD1F34C67F00BBA9E0 /* MyCostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411DFCC1F34C67E00BBA9E0 /* MyCostTableViewController.swift */; };
-		141203CC1F424F52008995A5 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141203CB1F424F52008995A5 /* NoteViewController.swift */; };
-		14124E761EA2DE7100F2C84C /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14124E751EA2DE7100F2C84C /* CurrencyViewController.swift */; };
-		141522F21EB48FEE00A8165D /* CostLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141522F11EB48FEE00A8165D /* CostLoaderService.swift */; };
-		14162D621E9D1F4000409614 /* CostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14162D611E9D1F4000409614 /* CostView.swift */; };
-		14162D6A1E9D557B00409614 /* DateSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14162D691E9D557B00409614 /* DateSelectorViewController.swift */; };
-		14165BDD1EA4C2C200BF6D2C /* TripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14165BDC1EA4C2C200BF6D2C /* TripTableViewController.swift */; };
-		14165BDF1EA4C34300BF6D2C /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14165BDE1EA4C34300BF6D2C /* TripTableViewCell.swift */; };
-		14165BE21EA51BE800BF6D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14165BE01EA51BE800BF6D2C /* Main.storyboard */; };
-		1418FEA11EA6B20900B225E7 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418FEA01EA6B20900B225E7 /* TripViewController.swift */; };
-		1419DD891E9EDBCA00D55649 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419DD881E9EDBCA00D55649 /* ShadowView.swift */; };
 		1419F96C1E92E21D00B7E464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419F96B1E92E21D00B7E464 /* AppDelegate.swift */; };
-		1419F96E1E92E21D00B7E464 /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419F96D1E92E21D00B7E464 /* CostViewController.swift */; };
 		1419F9731E92E21D00B7E464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1419F9721E92E21D00B7E464 /* Assets.xcassets */; };
 		1419F9761E92E21D00B7E464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1419F9741E92E21D00B7E464 /* LaunchScreen.storyboard */; };
 		1419F9811E92E21D00B7E464 /* SplityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419F9801E92E21D00B7E464 /* SplityTests.swift */; };
-		141CEAC31F32886200FB0223 /* TripTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CEAC21F32886200FB0223 /* TripTabBarController.swift */; };
-		141F66FF1F4A231E00367086 /* TravellerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F66FE1F4A231E00367086 /* TravellerTableViewController.swift */; };
-		141F67011F4A2CF100367086 /* NewTripCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F67001F4A2CF100367086 /* NewTripCreationTableViewController.swift */; };
-		141F67061F4A3EFF00367086 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F67041F4A3EFF00367086 /* LabelTableViewCell.swift */; };
-		141F67071F4A3EFF00367086 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F67051F4A3EFF00367086 /* LabelTableViewCell.xib */; };
-		141F670C1F4A3FDA00367086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141F670A1F4A3FDA00367086 /* ButtonTableViewCell.swift */; };
-		141F670D1F4A3FDA00367086 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141F670B1F4A3FDA00367086 /* ButtonTableViewCell.xib */; };
-		141FCBE81EAC04500038EE60 /* CostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141FCBE71EAC04500038EE60 /* CostTableViewController.swift */; };
-		1420DD601F49A680006192B0 /* TravellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420DD5F1F49A680006192B0 /* TravellerViewController.swift */; };
-		1422B0421F4E243D00596DC4 /* TripPeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422B0401F4E243D00596DC4 /* TripPeriodTableViewCell.swift */; };
-		1422B0431F4E243D00596DC4 /* TripPeriodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1422B0411F4E243D00596DC4 /* TripPeriodTableViewCell.xib */; };
-		1422B0461F4E330700596DC4 /* TripDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422B0441F4E330700596DC4 /* TripDateTableViewCell.swift */; };
-		1422B0471F4E330700596DC4 /* TripDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1422B0451F4E330700596DC4 /* TripDateTableViewCell.xib */; };
-		142454D920816829008438AC /* CostAnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142454D820816829008438AC /* CostAnalysisViewModel.swift */; };
-		1425C3A01F51C63200C6BA16 /* TripPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C39E1F51C63200C6BA16 /* TripPhotoTableViewCell.swift */; };
-		1425C3A11F51C63200C6BA16 /* TripPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1425C39F1F51C63200C6BA16 /* TripPhotoTableViewCell.xib */; };
-		1425C3A51F51D9E900C6BA16 /* AddNewTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C3A41F51D9E900C6BA16 /* AddNewTextViewController.swift */; };
-		1425C3AC1F523F5100C6BA16 /* CostAnalysisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C3AA1F523F5100C6BA16 /* CostAnalysisTableViewCell.swift */; };
-		1425C3AD1F523F5100C6BA16 /* CostAnalysisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1425C3AB1F523F5100C6BA16 /* CostAnalysisTableViewCell.xib */; };
-		1425C3AF1F52406400C6BA16 /* CostAnalysisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C3AE1F52406400C6BA16 /* CostAnalysisTableViewController.swift */; };
 		1425C3B21F52415200C6BA16 /* Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C3B11F52415200C6BA16 /* Extansion.swift */; };
-		1427917120903ADA002E44DC /* TestTabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427917020903ADA002E44DC /* TestTabPageViewController.swift */; };
-		1427917B20903C4A002E44DC /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427917520903C49002E44DC /* TabPageOption.swift */; };
-		1427917C20903C4A002E44DC /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427917620903C49002E44DC /* TabCollectionCell.swift */; };
-		1427917D20903C4A002E44DC /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427917720903C4A002E44DC /* TabPageViewController.swift */; };
-		1427917E20903C4A002E44DC /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1427917820903C4A002E44DC /* TabView.xib */; };
-		1427917F20903C4A002E44DC /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1427917920903C4A002E44DC /* TabCollectionCell.xib */; };
-		1427918020903C4A002E44DC /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427917A20903C4A002E44DC /* TabView.swift */; };
-		1427918220904104002E44DC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427918120904104002E44DC /* MainViewController.swift */; };
-		14288FB52090A1AA003B9F5E /* SelectTravellerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14288FB42090A1AA003B9F5E /* SelectTravellerViewModel.swift */; };
-		1428D6D41F1BD88400AE11AC /* ExtansionsForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1428D6D31F1BD88400AE11AC /* ExtansionsForSample.swift */; };
-		142938EB2083803000536544 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142938EA2083803000536544 /* TripViewModel.swift */; };
-		142938ED2083B8B100536544 /* TripViewModelItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142938EC2083B8B100536544 /* TripViewModelItems.swift */; };
-		142938EF2083C76C00536544 /* TravellerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142938EE2083C76C00536544 /* TravellerViewModel.swift */; };
-		142C61D0208535B80059AAC8 /* ModelExtensionForSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142C61CF208535B80059AAC8 /* ModelExtensionForSample.swift */; };
 		142EC2582095E38B00B607F9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC24E2095E38700B607F9 /* Enums.swift */; };
 		142EC2592095E38B00B607F9 /* TripCloudRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC24F2095E38800B607F9 /* TripCloudRequest.swift */; };
 		142EC25A2095E38B00B607F9 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC2502095E38800B607F9 /* Trip.swift */; };
@@ -70,31 +22,28 @@
 		142EC25F2095E38B00B607F9 /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC2552095E38A00B607F9 /* Cost.swift */; };
 		142EC2602095E38B00B607F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC2562095E38A00B607F9 /* Model.swift */; };
 		142EC2612095E38B00B607F9 /* Traveler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EC2572095E38B00B607F9 /* Traveler.swift */; };
-		142F9DB520B61A95002B290F /* SelectTravellerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142F9DB420B61A95002B290F /* SelectTravellerTableViewCell.swift */; };
-		1439C4B51EA4239E00C50B0D /* BuyerSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1439C4B41EA4239E00C50B0D /* BuyerSelectorViewController.swift */; };
-		14C142081F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C142061F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.swift */; };
-		14C142091F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C142071F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib */; };
-		14C2FBF620890C2800B76FA6 /* MainTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2FBF520890C2800B76FA6 /* MainTripsViewController.swift */; };
-		F715F3DD244661A900CDC9EC /* TravelerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715F3DC244661A900CDC9EC /* TravelerModel.swift */; };
-		F715F3DF244661C600CDC9EC /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715F3DE244661C600CDC9EC /* TripModel.swift */; };
+		F715F3DF244661C600CDC9EC /* TripDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715F3DE244661C600CDC9EC /* TripDataModel.swift */; };
 		F715F3E1244661F000CDC9EC /* CloudKitName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F715F3E0244661F000CDC9EC /* CloudKitName.swift */; };
-		F738C117244B604400885422 /* PaymentParticipationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C116244B604400885422 /* PaymentParticipationModel.swift */; };
-		F738C119244B6D5A00885422 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C118244B6D5A00885422 /* AppModel.swift */; };
-		F738C11B244B6D7C00885422 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C11A244B6D7C00885422 /* UserModel.swift */; };
-		F738C11D244B789400885422 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C11C244B789400885422 /* BaseModel.swift */; };
+		F738C117244B604400885422 /* PaymentParticipationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C116244B604400885422 /* PaymentParticipationDataModel.swift */; };
+		F738C119244B6D5A00885422 /* ApplicationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C118244B6D5A00885422 /* ApplicationDataModel.swift */; };
+		F738C11D244B789400885422 /* BaseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C11C244B789400885422 /* BaseDataModel.swift */; };
 		F738C11F244B78CE00885422 /* InternalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C11E244B78CE00885422 /* InternalProtocol.swift */; };
 		F738C121244C7FB700885422 /* LocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C120244C7FB700885422 /* LocalRepository.swift */; };
 		F738C123244C7FC400885422 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C122244C7FC400885422 /* RemoteRepository.swift */; };
 		F738C125244C811000885422 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738C124244C811000885422 /* Extensions.swift */; };
 		F739BF9B232EA200002919BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F739BF9A232EA200002919BA /* Default-568h@2x.png */; };
+		F73A9649245F00330074ED72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73A9648245F00330074ED72 /* Main.storyboard */; };
+		F73A964B245F2DF90074ED72 /* BaseDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A964A245F2DF90074ED72 /* BaseDataModelTests.swift */; };
+		F73A964D245F2E260074ED72 /* TripDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A964C245F2E260074ED72 /* TripDataModelTests.swift */; };
+		F73A9650245F2E670074ED72 /* CostDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A964F245F2E670074ED72 /* CostDataModelTests.swift */; };
+		F73A9652245F2E7C0074ED72 /* ApplicationDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A9651245F2E7C0074ED72 /* ApplicationDataModelTests.swift */; };
+		F73A9654245F2E8B0074ED72 /* TravelerDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A9653245F2E8B0074ED72 /* TravelerDataModelTests.swift */; };
+		F73A9656245F2E9E0074ED72 /* PaymentParticipationDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A9655245F2E9E0074ED72 /* PaymentParticipationDataModelTests.swift */; };
+		F73A965A245F30C20074ED72 /* TravelerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73A9659245F30C10074ED72 /* TravelerModel.swift */; };
 		F756948E21C5A60B002FAA0A /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756948D21C5A60B002FAA0A /* CurrencyService.swift */; };
-		F76AFF622120418B00A38CDE /* CostAnalysisViewModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76AFF612120418B00A38CDE /* CostAnalysisViewModelItem.swift */; };
-		F76AFF642120447F00A38CDE /* CostSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76AFF632120447F00A38CDE /* CostSectionView.swift */; };
-		F76AFF66212044D400A38CDE /* CostSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F76AFF65212044D300A38CDE /* CostSectionView.xib */; };
-		F7A1ED9A21347DDD00910E26 /* TestFontView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7A1ED9921347DDD00910E26 /* TestFontView.xib */; };
 		F7BECACC22435D0900BA2648 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BECACB22435D0900BA2648 /* ModelManager.swift */; };
 		F7BECACE22435D1E00BA2648 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BECACD22435D1E00BA2648 /* DataManager.swift */; };
-		F7C487182443673100F8F868 /* CostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C487172443673100F8F868 /* CostModel.swift */; };
+		F7C487182443673100F8F868 /* CostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C487172443673100F8F868 /* CostDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,64 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1411DFC81F34C35800BBA9E0 /* CostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
-		1411DFC91F34C35800BBA9E0 /* MyCostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCostTableViewCell.xib; sourceTree = "<group>"; };
-		1411DFCC1F34C67E00BBA9E0 /* MyCostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCostTableViewController.swift; sourceTree = "<group>"; };
-		141203CB1F424F52008995A5 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteViewController.swift; path = ../NoteViewController.swift; sourceTree = "<group>"; };
-		14124E751EA2DE7100F2C84C /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
-		141522F11EB48FEE00A8165D /* CostLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostLoaderService.swift; sourceTree = "<group>"; };
-		14162D611E9D1F4000409614 /* CostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostView.swift; sourceTree = "<group>"; };
-		14162D691E9D557B00409614 /* DateSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectorViewController.swift; sourceTree = "<group>"; };
-		14165BDC1EA4C2C200BF6D2C /* TripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewController.swift; sourceTree = "<group>"; };
-		14165BDE1EA4C34300BF6D2C /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
-		14165BE11EA51BE800BF6D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1418FEA01EA6B20900B225E7 /* TripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
-		1419DD881E9EDBCA00D55649 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		1419F9681E92E21D00B7E464 /* Splity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1419F96B1E92E21D00B7E464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1419F96D1E92E21D00B7E464 /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
 		1419F9721E92E21D00B7E464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1419F9751E92E21D00B7E464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1419F9771E92E21D00B7E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1419F97C1E92E21D00B7E464 /* SplityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1419F9801E92E21D00B7E464 /* SplityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplityTests.swift; sourceTree = "<group>"; };
 		1419F9821E92E21D00B7E464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		141CEAC21F32886200FB0223 /* TripTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTabBarController.swift; sourceTree = "<group>"; };
-		141F66FE1F4A231E00367086 /* TravellerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravellerTableViewController.swift; sourceTree = "<group>"; };
-		141F67001F4A2CF100367086 /* NewTripCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTripCreationTableViewController.swift; sourceTree = "<group>"; };
-		141F67041F4A3EFF00367086 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
-		141F67051F4A3EFF00367086 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
-		141F670A1F4A3FDA00367086 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
-		141F670B1F4A3FDA00367086 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
-		141FCBE71EAC04500038EE60 /* CostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostTableViewController.swift; sourceTree = "<group>"; };
 		142012221F3A3CC300B049DE /* CostTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CostTracker.entitlements; sourceTree = "<group>"; };
-		1420DD5F1F49A680006192B0 /* TravellerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravellerViewController.swift; sourceTree = "<group>"; };
-		1422B0401F4E243D00596DC4 /* TripPeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPeriodTableViewCell.swift; sourceTree = "<group>"; };
-		1422B0411F4E243D00596DC4 /* TripPeriodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripPeriodTableViewCell.xib; sourceTree = "<group>"; };
-		1422B0441F4E330700596DC4 /* TripDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDateTableViewCell.swift; sourceTree = "<group>"; };
-		1422B0451F4E330700596DC4 /* TripDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripDateTableViewCell.xib; sourceTree = "<group>"; };
-		142454D820816829008438AC /* CostAnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostAnalysisViewModel.swift; sourceTree = "<group>"; };
-		1425C39E1F51C63200C6BA16 /* TripPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripPhotoTableViewCell.swift; sourceTree = "<group>"; };
-		1425C39F1F51C63200C6BA16 /* TripPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripPhotoTableViewCell.xib; sourceTree = "<group>"; };
-		1425C3A41F51D9E900C6BA16 /* AddNewTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewTextViewController.swift; sourceTree = "<group>"; };
-		1425C3AA1F523F5100C6BA16 /* CostAnalysisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostAnalysisTableViewCell.swift; sourceTree = "<group>"; };
-		1425C3AB1F523F5100C6BA16 /* CostAnalysisTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CostAnalysisTableViewCell.xib; sourceTree = "<group>"; };
-		1425C3AE1F52406400C6BA16 /* CostAnalysisTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostAnalysisTableViewController.swift; sourceTree = "<group>"; };
 		1425C3B11F52415200C6BA16 /* Extansion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extansion.swift; sourceTree = "<group>"; };
-		1427917020903ADA002E44DC /* TestTabPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabPageViewController.swift; sourceTree = "<group>"; };
-		1427917520903C49002E44DC /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
-		1427917620903C49002E44DC /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
-		1427917720903C4A002E44DC /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
-		1427917820903C4A002E44DC /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
-		1427917920903C4A002E44DC /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
-		1427917A20903C4A002E44DC /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
-		1427918120904104002E44DC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		14288FB42090A1AA003B9F5E /* SelectTravellerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTravellerViewModel.swift; sourceTree = "<group>"; };
-		1428D6D31F1BD88400AE11AC /* ExtansionsForSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtansionsForSample.swift; sourceTree = "<group>"; };
-		142938EA2083803000536544 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
-		142938EC2083B8B100536544 /* TripViewModelItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModelItems.swift; sourceTree = "<group>"; };
-		142938EE2083C76C00536544 /* TravellerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerViewModel.swift; sourceTree = "<group>"; };
-		142C61CF208535B80059AAC8 /* ModelExtensionForSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensionForSample.swift; sourceTree = "<group>"; };
 		142EC24E2095E38700B607F9 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		142EC24F2095E38800B607F9 /* TripCloudRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripCloudRequest.swift; sourceTree = "<group>"; };
 		142EC2502095E38800B607F9 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
@@ -176,32 +77,29 @@
 		142EC2552095E38A00B607F9 /* Cost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		142EC2562095E38A00B607F9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		142EC2572095E38B00B607F9 /* Traveler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Traveler.swift; sourceTree = "<group>"; };
-		142F9DB420B61A95002B290F /* SelectTravellerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTravellerTableViewCell.swift; sourceTree = "<group>"; };
-		1439C4B41EA4239E00C50B0D /* BuyerSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyerSelectorViewController.swift; sourceTree = "<group>"; };
-		14C142061F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAsLabelTableViewCell.swift; sourceTree = "<group>"; };
-		14C142071F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonAsLabelTableViewCell.xib; sourceTree = "<group>"; };
-		14C2FBF520890C2800B76FA6 /* MainTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTripsViewController.swift; sourceTree = "<group>"; };
-		F715F3DC244661A900CDC9EC /* TravelerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelerModel.swift; sourceTree = "<group>"; };
-		F715F3DE244661C600CDC9EC /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		F715F3DE244661C600CDC9EC /* TripDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataModel.swift; sourceTree = "<group>"; };
 		F715F3E0244661F000CDC9EC /* CloudKitName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitName.swift; sourceTree = "<group>"; };
-		F738C116244B604400885422 /* PaymentParticipationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParticipationModel.swift; sourceTree = "<group>"; };
-		F738C118244B6D5A00885422 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		F738C11A244B6D7C00885422 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		F738C11C244B789400885422 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		F738C116244B604400885422 /* PaymentParticipationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParticipationDataModel.swift; sourceTree = "<group>"; };
+		F738C118244B6D5A00885422 /* ApplicationDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDataModel.swift; sourceTree = "<group>"; };
+		F738C11C244B789400885422 /* BaseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataModel.swift; sourceTree = "<group>"; };
 		F738C11E244B78CE00885422 /* InternalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalProtocol.swift; sourceTree = "<group>"; };
 		F738C120244C7FB700885422 /* LocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRepository.swift; sourceTree = "<group>"; };
 		F738C122244C7FC400885422 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		F738C124244C811000885422 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F739BF9A232EA200002919BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F739BF9C232EA621002919BA /* Splity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Splity.entitlements; sourceTree = "<group>"; };
+		F73A9648245F00330074ED72 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F73A964A245F2DF90074ED72 /* BaseDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataModelTests.swift; sourceTree = "<group>"; };
+		F73A964C245F2E260074ED72 /* TripDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDataModelTests.swift; sourceTree = "<group>"; };
+		F73A964F245F2E670074ED72 /* CostDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostDataModelTests.swift; sourceTree = "<group>"; };
+		F73A9651245F2E7C0074ED72 /* ApplicationDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDataModelTests.swift; sourceTree = "<group>"; };
+		F73A9653245F2E8B0074ED72 /* TravelerDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelerDataModelTests.swift; sourceTree = "<group>"; };
+		F73A9655245F2E9E0074ED72 /* PaymentParticipationDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParticipationDataModelTests.swift; sourceTree = "<group>"; };
+		F73A9659245F30C10074ED72 /* TravelerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelerModel.swift; sourceTree = "<group>"; };
 		F756948D21C5A60B002FAA0A /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
-		F76AFF612120418B00A38CDE /* CostAnalysisViewModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostAnalysisViewModelItem.swift; sourceTree = "<group>"; };
-		F76AFF632120447F00A38CDE /* CostSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostSectionView.swift; sourceTree = "<group>"; };
-		F76AFF65212044D300A38CDE /* CostSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CostSectionView.xib; sourceTree = "<group>"; };
-		F7A1ED9921347DDD00910E26 /* TestFontView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestFontView.xib; sourceTree = "<group>"; };
 		F7BECACB22435D0900BA2648 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		F7BECACD22435D1E00BA2648 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		F7C487172443673100F8F868 /* CostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostModel.swift; sourceTree = "<group>"; };
+		F7C487172443673100F8F868 /* CostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,16 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14004D3A20963A1600DCED5F /* TripParameters */ = {
-			isa = PBXGroup;
-			children = (
-				1418FEA01EA6B20900B225E7 /* TripViewController.swift */,
-				142938EA2083803000536544 /* TripViewModel.swift */,
-				142938EC2083B8B100536544 /* TripViewModelItems.swift */,
-			);
-			name = TripParameters;
-			sourceTree = "<group>";
-		};
 		1419F95F1E92E21C00B7E464 = {
 			isa = PBXGroup;
 			children = (
@@ -259,15 +147,9 @@
 				F739BF9C232EA621002919BA /* Splity.entitlements */,
 				F756948C21C5A5F0002FAA0A /* Services */,
 				142EC2622095E3FF00B607F9 /* Model */,
-				14288FB32090A127003B9F5E /* TEST_NAVIGATION */,
-				14288FB220909BE4003B9F5E /* OLD */,
 				142012221F3A3CC300B049DE /* CostTracker.entitlements */,
 				1419F98B1E92E29000B7E464 /* Supporting Files */,
-				14165BE01EA51BE800BF6D2C /* Main.storyboard */,
-				1422B03F1F4E240F00596DC4 /* TripCells */,
-				1425C3A81F523D0500C6BA16 /* Trip */,
-				141B70FC1EAEA14F00153492 /* Trips */,
-				F7A1ED9921347DDD00910E26 /* TestFontView.xib */,
+				F73A9648245F00330074ED72 /* Main.storyboard */,
 			);
 			path = Splity;
 			sourceTree = "<group>";
@@ -277,6 +159,12 @@
 			children = (
 				1419F9801E92E21D00B7E464 /* SplityTests.swift */,
 				1419F9821E92E21D00B7E464 /* Info.plist */,
+				F73A964A245F2DF90074ED72 /* BaseDataModelTests.swift */,
+				F73A964C245F2E260074ED72 /* TripDataModelTests.swift */,
+				F73A964F245F2E670074ED72 /* CostDataModelTests.swift */,
+				F73A9651245F2E7C0074ED72 /* ApplicationDataModelTests.swift */,
+				F73A9653245F2E8B0074ED72 /* TravelerDataModelTests.swift */,
+				F73A9655245F2E9E0074ED72 /* PaymentParticipationDataModelTests.swift */,
 			);
 			path = SplityTests;
 			sourceTree = "<group>";
@@ -292,139 +180,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		141B70FC1EAEA14F00153492 /* Trips */ = {
-			isa = PBXGroup;
-			children = (
-				14165BDE1EA4C34300BF6D2C /* TripTableViewCell.swift */,
-				14C2FBF520890C2800B76FA6 /* MainTripsViewController.swift */,
-			);
-			name = Trips;
-			sourceTree = "<group>";
-		};
-		141B70FD1EAEA15D00153492 /* Cost */ = {
-			isa = PBXGroup;
-			children = (
-				141FCBE71EAC04500038EE60 /* CostTableViewController.swift */,
-				14124E751EA2DE7100F2C84C /* CurrencyViewController.swift */,
-				14162D691E9D557B00409614 /* DateSelectorViewController.swift */,
-				1411DFC81F34C35800BBA9E0 /* CostTableViewCell.swift */,
-				1419F96D1E92E21D00B7E464 /* CostViewController.swift */,
-				14162D611E9D1F4000409614 /* CostView.swift */,
-				1411DFC91F34C35800BBA9E0 /* MyCostTableViewCell.xib */,
-			);
-			name = Cost;
-			sourceTree = "<group>";
-		};
 		142012231F3A3CDD00B049DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1420DD5E1F49A65D006192B0 /* Traveller */ = {
-			isa = PBXGroup;
-			children = (
-				1420DD5F1F49A680006192B0 /* TravellerViewController.swift */,
-				142F9DB420B61A95002B290F /* SelectTravellerTableViewCell.swift */,
-				141F66FE1F4A231E00367086 /* TravellerTableViewController.swift */,
-				142938EE2083C76C00536544 /* TravellerViewModel.swift */,
-				14288FB42090A1AA003B9F5E /* SelectTravellerViewModel.swift */,
-			);
-			name = Traveller;
-			sourceTree = "<group>";
-		};
-		1422B03F1F4E240F00596DC4 /* TripCells */ = {
-			isa = PBXGroup;
-			children = (
-				141F67041F4A3EFF00367086 /* LabelTableViewCell.swift */,
-				14C142061F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.swift */,
-				14C142071F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib */,
-				141F67051F4A3EFF00367086 /* LabelTableViewCell.xib */,
-				141F670A1F4A3FDA00367086 /* ButtonTableViewCell.swift */,
-				141F670B1F4A3FDA00367086 /* ButtonTableViewCell.xib */,
-				1422B0401F4E243D00596DC4 /* TripPeriodTableViewCell.swift */,
-				1422B0411F4E243D00596DC4 /* TripPeriodTableViewCell.xib */,
-				1422B0441F4E330700596DC4 /* TripDateTableViewCell.swift */,
-				1422B0451F4E330700596DC4 /* TripDateTableViewCell.xib */,
-				1425C39E1F51C63200C6BA16 /* TripPhotoTableViewCell.swift */,
-				1425C39F1F51C63200C6BA16 /* TripPhotoTableViewCell.xib */,
-			);
-			name = TripCells;
-			sourceTree = "<group>";
-		};
-		1425C3A31F51D9C400C6BA16 /* Destination */ = {
-			isa = PBXGroup;
-			children = (
-				1425C3A41F51D9E900C6BA16 /* AddNewTextViewController.swift */,
-			);
-			name = Destination;
-			sourceTree = "<group>";
-		};
-		1425C3A81F523D0500C6BA16 /* Trip */ = {
-			isa = PBXGroup;
-			children = (
-				1425C3A31F51D9C400C6BA16 /* Destination */,
-				1420DD5E1F49A65D006192B0 /* Traveller */,
-				141CEAC21F32886200FB0223 /* TripTabBarController.swift */,
-				1425C3A91F523F1300C6BA16 /* CostBilan */,
-				141B70FD1EAEA15D00153492 /* Cost */,
-				14004D3A20963A1600DCED5F /* TripParameters */,
-				141203CB1F424F52008995A5 /* NoteViewController.swift */,
-			);
-			name = Trip;
-			sourceTree = "<group>";
-		};
-		1425C3A91F523F1300C6BA16 /* CostBilan */ = {
-			isa = PBXGroup;
-			children = (
-				1425C3AE1F52406400C6BA16 /* CostAnalysisTableViewController.swift */,
-				142454D820816829008438AC /* CostAnalysisViewModel.swift */,
-				F76AFF612120418B00A38CDE /* CostAnalysisViewModelItem.swift */,
-				1425C3AA1F523F5100C6BA16 /* CostAnalysisTableViewCell.swift */,
-				1425C3AB1F523F5100C6BA16 /* CostAnalysisTableViewCell.xib */,
-				F76AFF632120447F00A38CDE /* CostSectionView.swift */,
-				F76AFF65212044D300A38CDE /* CostSectionView.xib */,
-			);
-			name = CostBilan;
-			sourceTree = "<group>";
-		};
-		1427917420903C30002E44DC /* TabPageViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1427917620903C49002E44DC /* TabCollectionCell.swift */,
-				1427917920903C4A002E44DC /* TabCollectionCell.xib */,
-				1427917520903C49002E44DC /* TabPageOption.swift */,
-				1427917720903C4A002E44DC /* TabPageViewController.swift */,
-				1427917A20903C4A002E44DC /* TabView.swift */,
-				1427917820903C4A002E44DC /* TabView.xib */,
-			);
-			name = TabPageViewController;
-			sourceTree = "<group>";
-		};
-		14288FB220909BE4003B9F5E /* OLD */ = {
-			isa = PBXGroup;
-			children = (
-				141F67001F4A2CF100367086 /* NewTripCreationTableViewController.swift */,
-				1419DD881E9EDBCA00D55649 /* ShadowView.swift */,
-				1411DFCC1F34C67E00BBA9E0 /* MyCostTableViewController.swift */,
-				14165BDC1EA4C2C200BF6D2C /* TripTableViewController.swift */,
-				141522F11EB48FEE00A8165D /* CostLoaderService.swift */,
-				1428D6D31F1BD88400AE11AC /* ExtansionsForSample.swift */,
-				142C61CF208535B80059AAC8 /* ModelExtensionForSample.swift */,
-				1439C4B41EA4239E00C50B0D /* BuyerSelectorViewController.swift */,
-			);
-			name = OLD;
-			sourceTree = "<group>";
-		};
-		14288FB32090A127003B9F5E /* TEST_NAVIGATION */ = {
-			isa = PBXGroup;
-			children = (
-				1427917020903ADA002E44DC /* TestTabPageViewController.swift */,
-				1427918120904104002E44DC /* MainViewController.swift */,
-				1427917420903C30002E44DC /* TabPageViewController */,
-			);
-			name = TEST_NAVIGATION;
 			sourceTree = "<group>";
 		};
 		142EC2622095E3FF00B607F9 /* Model */ = {
@@ -450,14 +210,13 @@
 		F738C115244B5FFC00885422 /* Internal Model */ = {
 			isa = PBXGroup;
 			children = (
-				F7C487172443673100F8F868 /* CostModel.swift */,
-				F715F3DC244661A900CDC9EC /* TravelerModel.swift */,
-				F715F3DE244661C600CDC9EC /* TripModel.swift */,
+				F7C487172443673100F8F868 /* CostDataModel.swift */,
+				F73A9659245F30C10074ED72 /* TravelerModel.swift */,
+				F715F3DE244661C600CDC9EC /* TripDataModel.swift */,
 				F715F3E0244661F000CDC9EC /* CloudKitName.swift */,
-				F738C116244B604400885422 /* PaymentParticipationModel.swift */,
-				F738C118244B6D5A00885422 /* AppModel.swift */,
-				F738C11A244B6D7C00885422 /* UserModel.swift */,
-				F738C11C244B789400885422 /* BaseModel.swift */,
+				F738C116244B604400885422 /* PaymentParticipationDataModel.swift */,
+				F738C118244B6D5A00885422 /* ApplicationDataModel.swift */,
+				F738C11C244B789400885422 /* BaseDataModel.swift */,
 				F738C11E244B78CE00885422 /* InternalProtocol.swift */,
 				F738C120244C7FB700885422 /* LocalRepository.swift */,
 				F738C122244C7FC400885422 /* RemoteRepository.swift */,
@@ -569,22 +328,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1411DFCB1F34C35800BBA9E0 /* MyCostTableViewCell.xib in Resources */,
-				1422B0431F4E243D00596DC4 /* TripPeriodTableViewCell.xib in Resources */,
-				141F670D1F4A3FDA00367086 /* ButtonTableViewCell.xib in Resources */,
-				141F67071F4A3EFF00367086 /* LabelTableViewCell.xib in Resources */,
+				F73A9649245F00330074ED72 /* Main.storyboard in Resources */,
 				1419F9761E92E21D00B7E464 /* LaunchScreen.storyboard in Resources */,
-				F7A1ED9A21347DDD00910E26 /* TestFontView.xib in Resources */,
-				F76AFF66212044D400A38CDE /* CostSectionView.xib in Resources */,
 				1419F9731E92E21D00B7E464 /* Assets.xcassets in Resources */,
-				1427917E20903C4A002E44DC /* TabView.xib in Resources */,
-				14165BE21EA51BE800BF6D2C /* Main.storyboard in Resources */,
-				1425C3A11F51C63200C6BA16 /* TripPhotoTableViewCell.xib in Resources */,
-				14C142091F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.xib in Resources */,
-				1427917F20903C4A002E44DC /* TabCollectionCell.xib in Resources */,
 				F739BF9B232EA200002919BA /* Default-568h@2x.png in Resources */,
-				1422B0471F4E330700596DC4 /* TripDateTableViewCell.xib in Resources */,
-				1425C3AD1F523F5100C6BA16 /* CostAnalysisTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,77 +349,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1422B0421F4E243D00596DC4 /* TripPeriodTableViewCell.swift in Sources */,
-				14288FB52090A1AA003B9F5E /* SelectTravellerViewModel.swift in Sources */,
-				1428D6D41F1BD88400AE11AC /* ExtansionsForSample.swift in Sources */,
-				14165BDD1EA4C2C200BF6D2C /* TripTableViewController.swift in Sources */,
-				14C2FBF620890C2800B76FA6 /* MainTripsViewController.swift in Sources */,
 				F7BECACC22435D0900BA2648 /* ModelManager.swift in Sources */,
-				1425C3A01F51C63200C6BA16 /* TripPhotoTableViewCell.swift in Sources */,
-				1411DFCD1F34C67F00BBA9E0 /* MyCostTableViewController.swift in Sources */,
 				142EC2582095E38B00B607F9 /* Enums.swift in Sources */,
-				1427917120903ADA002E44DC /* TestTabPageViewController.swift in Sources */,
-				F738C11B244B6D7C00885422 /* UserModel.swift in Sources */,
-				1425C3AF1F52406400C6BA16 /* CostAnalysisTableViewController.swift in Sources */,
-				1425C3A51F51D9E900C6BA16 /* AddNewTextViewController.swift in Sources */,
-				141203CC1F424F52008995A5 /* NoteViewController.swift in Sources */,
-				F715F3DD244661A900CDC9EC /* TravelerModel.swift in Sources */,
-				1427917C20903C4A002E44DC /* TabCollectionCell.swift in Sources */,
 				142EC25C2095E38B00B607F9 /* CostComputationService.swift in Sources */,
-				1411DFCA1F34C35800BBA9E0 /* CostTableViewCell.swift in Sources */,
+				F73A965A245F30C20074ED72 /* TravelerModel.swift in Sources */,
 				142EC2592095E38B00B607F9 /* TripCloudRequest.swift in Sources */,
-				1420DD601F49A680006192B0 /* TravellerViewController.swift in Sources */,
-				141F67011F4A2CF100367086 /* NewTripCreationTableViewController.swift in Sources */,
-				1427918020903C4A002E44DC /* TabView.swift in Sources */,
 				F715F3E1244661F000CDC9EC /* CloudKitName.swift in Sources */,
 				F7BECACE22435D1E00BA2648 /* DataManager.swift in Sources */,
-				1427917D20903C4A002E44DC /* TabPageViewController.swift in Sources */,
-				1427917B20903C4A002E44DC /* TabPageOption.swift in Sources */,
-				141CEAC31F32886200FB0223 /* TripTabBarController.swift in Sources */,
 				F738C123244C7FC400885422 /* RemoteRepository.swift in Sources */,
-				1427918220904104002E44DC /* MainViewController.swift in Sources */,
-				1419F96E1E92E21D00B7E464 /* CostViewController.swift in Sources */,
-				1422B0461F4E330700596DC4 /* TripDateTableViewCell.swift in Sources */,
-				1418FEA11EA6B20900B225E7 /* TripViewController.swift in Sources */,
 				142EC25E2095E38B00B607F9 /* Configuration.swift in Sources */,
-				1425C3AC1F523F5100C6BA16 /* CostAnalysisTableViewCell.swift in Sources */,
-				F738C117244B604400885422 /* PaymentParticipationModel.swift in Sources */,
-				F738C119244B6D5A00885422 /* AppModel.swift in Sources */,
-				141522F21EB48FEE00A8165D /* CostLoaderService.swift in Sources */,
+				F738C117244B604400885422 /* PaymentParticipationDataModel.swift in Sources */,
+				F738C119244B6D5A00885422 /* ApplicationDataModel.swift in Sources */,
 				F738C11F244B78CE00885422 /* InternalProtocol.swift in Sources */,
 				F738C125244C811000885422 /* Extensions.swift in Sources */,
 				F756948E21C5A60B002FAA0A /* CurrencyService.swift in Sources */,
-				142938EF2083C76C00536544 /* TravellerViewModel.swift in Sources */,
-				141F67061F4A3EFF00367086 /* LabelTableViewCell.swift in Sources */,
 				F738C121244C7FB700885422 /* LocalRepository.swift in Sources */,
 				142EC25A2095E38B00B607F9 /* Trip.swift in Sources */,
-				F76AFF622120418B00A38CDE /* CostAnalysisViewModelItem.swift in Sources */,
-				141FCBE81EAC04500038EE60 /* CostTableViewController.swift in Sources */,
-				141F670C1F4A3FDA00367086 /* ButtonTableViewCell.swift in Sources */,
-				F738C11D244B789400885422 /* BaseModel.swift in Sources */,
-				142454D920816829008438AC /* CostAnalysisViewModel.swift in Sources */,
-				F715F3DF244661C600CDC9EC /* TripModel.swift in Sources */,
+				F738C11D244B789400885422 /* BaseDataModel.swift in Sources */,
+				F715F3DF244661C600CDC9EC /* TripDataModel.swift in Sources */,
 				1419F96C1E92E21D00B7E464 /* AppDelegate.swift in Sources */,
-				14165BDF1EA4C34300BF6D2C /* TripTableViewCell.swift in Sources */,
-				142F9DB520B61A95002B290F /* SelectTravellerTableViewCell.swift in Sources */,
-				1419DD891E9EDBCA00D55649 /* ShadowView.swift in Sources */,
-				14C142081F4CE7CB00328DD4 /* ButtonAsLabelTableViewCell.swift in Sources */,
-				F7C487182443673100F8F868 /* CostModel.swift in Sources */,
-				14162D6A1E9D557B00409614 /* DateSelectorViewController.swift in Sources */,
+				F7C487182443673100F8F868 /* CostDataModel.swift in Sources */,
 				142EC2602095E38B00B607F9 /* Model.swift in Sources */,
-				141F66FF1F4A231E00367086 /* TravellerTableViewController.swift in Sources */,
 				142EC2612095E38B00B607F9 /* Traveler.swift in Sources */,
 				142EC25F2095E38B00B607F9 /* Cost.swift in Sources */,
-				142C61D0208535B80059AAC8 /* ModelExtensionForSample.swift in Sources */,
-				1439C4B51EA4239E00C50B0D /* BuyerSelectorViewController.swift in Sources */,
 				1425C3B21F52415200C6BA16 /* Extansion.swift in Sources */,
-				142938EB2083803000536544 /* TripViewModel.swift in Sources */,
 				142EC25B2095E38B00B607F9 /* MyDelegate.swift in Sources */,
-				14124E761EA2DE7100F2C84C /* CurrencyViewController.swift in Sources */,
-				142938ED2083B8B100536544 /* TripViewModelItems.swift in Sources */,
-				F76AFF642120447F00A38CDE /* CostSectionView.swift in Sources */,
 				142EC25D2095E38B00B607F9 /* Utilities.swift in Sources */,
-				14162D621E9D1F4000409614 /* CostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73A9656245F2E9E0074ED72 /* PaymentParticipationDataModelTests.swift in Sources */,
+				F73A9652245F2E7C0074ED72 /* ApplicationDataModelTests.swift in Sources */,
+				F73A964B245F2DF90074ED72 /* BaseDataModelTests.swift in Sources */,
+				F73A964D245F2E260074ED72 /* TripDataModelTests.swift in Sources */,
+				F73A9650245F2E670074ED72 /* CostDataModelTests.swift in Sources */,
+				F73A9654245F2E8B0074ED72 /* TravelerDataModelTests.swift in Sources */,
 				1419F9811E92E21D00B7E464 /* SplityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,14 +403,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14165BE01EA51BE800BF6D2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14165BE11EA51BE800BF6D2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1419F9741E92E21D00B7E464 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

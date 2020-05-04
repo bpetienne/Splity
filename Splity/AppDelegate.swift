@@ -44,20 +44,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         guard url.pathExtension == "ctkr" else {return false}
         
-        let trip = Trip.importData(from: url)
-        
-//        guard let navigationController = window?.rootViewController as? UINavigationController, let tripTableView = navigationController.visibleViewController as? TripTableViewController else {
+//        let trip = Trip.importData(from: url)
+//
+////        guard let navigationController = window?.rootViewController as? UINavigationController, let tripTableView = navigationController.visibleViewController as? TripTableViewController else {
+////            return true
+////        }
+//
+//        guard let tripTableView = window?.rootViewController as? MainTripsViewController  else {
 //            return true
 //        }
-        
-        guard let tripTableView = window?.rootViewController as? MainTripsViewController  else {
-            return true
-        }
-        
-        if let trip = trip {
-            tripTableView.model.addImportedTrip(trip: trip)
-            tripTableView.tableView.reloadData()
-        }
+//
+//        if let trip = trip {
+//            tripTableView.model.addImportedTrip(trip: trip)
+//            tripTableView.tableView.reloadData()
+//        }
         
         return true
     }

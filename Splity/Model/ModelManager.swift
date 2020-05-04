@@ -8,19 +8,11 @@
 
 import Foundation
 
+
 class ModelManager: ModelManagerProtocol {
     
-    func add(cost: Cost){
-        
-    }
-    
-    func update(cost: Cost){
-        
-    }
-    
-    func delete(cost: Cost){
-        
-    }
+ 
+    static var appModel: Model?
     
     func add(trip: Trip){
         
@@ -33,6 +25,18 @@ class ModelManager: ModelManagerProtocol {
     func delete(trip: Trip){
         
     }
+    
+    func add(cost: Cost){
+         
+     }
+     
+     func update(cost: Cost){
+         
+     }
+     
+     func delete(cost: Cost){
+         
+     }
     
     func add(traveler: Traveler){
         

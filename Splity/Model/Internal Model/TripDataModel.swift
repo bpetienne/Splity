@@ -1,5 +1,5 @@
 //
-//  TripModel.swift
+//  TripDataModel.swift
 //  Splity
 //
 //  Created by Benoit ETIENNE on 14/04/2020.
@@ -10,34 +10,23 @@ import UIKit
 import os.log
 import CloudKit
 
-class TripModel:  BaseModel {
+class TripDataModel:  BaseDataModel {
     
     //MARK: Properties
-    var name: String!
-    var beginDate: Date
-    var endDate: Date
+    var name: String?
+    var beginDate: Date?
+    var endDate: Date?
     var lastCurrencyCode: String?
-    var currencyCodes: [String]
+    var currencyCodes: [String] = [String]()
     var mainCountry: String?
-    var countries: [String]
+    var countries: [String] = [String]()
     var imageData: Data?
-    var costIds: [UUID]
-    var travelerIds: [UUID]
+    var costIds: [UUID] = [UUID]()
+    var travelerIds: [UUID] = [UUID]()
     
-    init?(name:String, beginDate: Date, endDate:Date,lastCurrencyCode: String?, currencyCodes: [String], mainCountry: String?,countries: [String], imageData: Data?,costIds: [UUID], travelerIds:[UUID])
+    override init(id: UUID)
     {
-        self.name = name
-        self.beginDate = beginDate
-        self.endDate = endDate
-        self.lastCurrencyCode = lastCurrencyCode
-        self.currencyCodes = currencyCodes
-        self.mainCountry = mainCountry
-        self.countries = countries
-        self.imageData  = imageData
-        self.costIds = costIds
-        self.travelerIds = travelerIds
-        super.init()
-        
+        super.init(id: id)
     }
     
     //MARK: Local Repository
@@ -53,6 +42,22 @@ class TripModel:  BaseModel {
         case costIds
         case travelerIds
     }
+    
+    override func encode(to encoder: Encoder) throws {
+          var container = encoder.container(keyedBy: CodingKeys.self)
+          try container.encode(name, forKey: .name)
+          try container.encode(beginDate, forKey: .beginDate)
+          try container.encode(endDate, forKey: .endDate)
+          try container.encode(lastCurrencyCode, forKey: .lastCurrencyCode)
+          try container.encode(currencyCodes, forKey: .currencyCodes)
+          try container.encode(mainCountry, forKey: .mainCountry)
+          try container.encode(countries, forKey: .countries)
+          try container.encode(imageData, forKey: .imageData)
+          try container.encode(costIds, forKey: .costIds)
+          try container.encode(travelerIds, forKey: .travelerIds)
+
+        try super.encode(to: encoder)
+      }
     
     required init(from decoder: Decoder) throws
     {
@@ -86,7 +91,6 @@ class TripModel:  BaseModel {
        }
        
     
-    
     override func createRecord() -> CKRecord
     {
         return CKRecord(recordType: CloudKitName.tripRecordType, recordID: CKRecordID(recordName: recordName, zoneID: CKRecordZone(zoneName: CloudKitName.costTrackerCustomZone).zoneID))
@@ -100,39 +104,39 @@ class TripModel:  BaseModel {
             self.name = data
         }
         
-        if let data = record[RemoteKey.beginDate] as! Date? {
+        if let data = record[RemoteKey.beginDate] as? Date {
             self.beginDate = data
         }
         
-        if let data = record[RemoteKey.endDate] as! Date? {
+        if let data = record[RemoteKey.endDate] as? Date {
             self.endDate = data
         }
         
-        if let data = record[RemoteKey.lastCurrencyCode] as! String? {
+        if let data = record[RemoteKey.lastCurrencyCode] as? String? {
             self.lastCurrencyCode = data
         }
         
-        if let data = record[RemoteKey.mainCountry] as! String? {
+        if let data = record[RemoteKey.mainCountry] as? String {
             self.mainCountry = data
         }
         
-        if let data = record[RemoteKey.countries] as! [String]? {
+        if let data = record[RemoteKey.countries] as? [String] {
             self.countries = data
         }
         
-        if let data = record[RemoteKey.currencyCodes] as! [String]? {
+        if let data = record[RemoteKey.currencyCodes] as? [String] {
             self.currencyCodes = data
         }
         
-        if let data = record[RemoteKey.imageData] as! Data? {
+        if let data = record[RemoteKey.imageData] as? Data {
             self.imageData = data
         }
         
-        if let data = record[RemoteKey.costIds] as! [String]? {
+        if let data = record[RemoteKey.costIds] as? [String] {
             self.costIds = data.map{UUID(uuidString: $0)!}
         }
         
-        if let data = record[RemoteKey.travelerIds] as! [String]? {
+        if let data = record[RemoteKey.travelerIds] as? [String] {
             self.travelerIds = data.map{UUID(uuidString: $0)!}
         }
     }
@@ -140,6 +144,7 @@ class TripModel:  BaseModel {
     override func fillRecord(record: CKRecord)
     {
         super.fillRecord(record: record)
+        
         if let name = name {
             record[RemoteKey.name] = name as CKRecordValue
         }
@@ -151,8 +156,15 @@ class TripModel:  BaseModel {
             record[RemoteKey.mainCountry] = mainCountry as CKRecordValue
         }
         
-        record[RemoteKey.beginDate] = beginDate as CKRecordValue
-        record[RemoteKey.endDate] = endDate as CKRecordValue
+        if let beginDate = beginDate {
+            record[RemoteKey.beginDate] = beginDate as CKRecordValue
+        }
+        
+        if let endDate = endDate {
+            record[RemoteKey.endDate] = endDate as CKRecordValue
+        }
+        
+        
         record[RemoteKey.countries] = countries as CKRecordValue
         record[RemoteKey.currencyCodes] = currencyCodes as CKRecordValue
         record[RemoteKey.costIds] = costIds.map{$0.uuidString} as CKRecordValue

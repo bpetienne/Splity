@@ -17,7 +17,7 @@ protocol CloudProtocol {
 }
 
 protocol LocalProtocol: Codable {
-    static func getArchivedUrl(_ uuid: UUID?) -> URL?
+    static func getArchivedUrl(_ uuid: UUID?, _ type: String) -> URL?
     var archivedUrl: URL? {get}
 }
 

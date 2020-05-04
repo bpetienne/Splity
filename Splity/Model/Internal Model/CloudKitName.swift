@@ -17,6 +17,7 @@ struct CloudKitName {
     static let tripRecordType = "Trip"
     static let paymentParticipationRecordType = "PaymentParticipation"
     static let appRecordType = "AppRecordType"
-    
+    static let baseModelRecordType = "BaseModel"
+
 }
 

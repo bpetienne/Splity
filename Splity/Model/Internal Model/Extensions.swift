@@ -13,7 +13,7 @@ import CloudKit
 
 extension CKRecord {
     
-    subscript(key: BaseModel.BaseRemoteKey) -> Any? {
+    subscript(key: BaseDataModel.BaseRemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }
@@ -22,7 +22,7 @@ extension CKRecord {
         }
     }
     
-    subscript(key: CostModel.RemoteKey) -> Any? {
+    subscript(key: CostDataModel.RemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }
@@ -31,7 +31,7 @@ extension CKRecord {
         }
     }
     
-    subscript(key: TripModel.RemoteKey) -> Any? {
+    subscript(key: TripDataModel.RemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }
@@ -40,7 +40,7 @@ extension CKRecord {
         }
     }
     
-    subscript(key: TravelerModel.RemoteKey) -> Any? {
+    subscript(key: TravelerDataModel.RemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }
@@ -49,7 +49,7 @@ extension CKRecord {
         }
     }
     
-    subscript(key: PaymentParticipationModel.RemoteKey) -> Any? {
+    subscript(key: PaymentParticipationDataModel.RemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }
@@ -58,7 +58,7 @@ extension CKRecord {
         }
     }
     
-    subscript(key: AppModel.RemoteKey) -> Any? {
+    subscript(key: ApplicationDataModel.RemoteKey) -> Any? {
         get {
             return self[key.rawValue]
         }

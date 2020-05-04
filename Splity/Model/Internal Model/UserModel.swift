@@ -10,6 +10,3 @@ import UIKit
 import os.log
 import CloudKit
 
-class UserModel: BaseModel {
-
-}

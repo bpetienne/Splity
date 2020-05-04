@@ -17,11 +17,11 @@ protocol ModelDelegate1 {
 }
 
 protocol DateSelectorViewControllerDelegate: class {
-    func selectedDate(sender: DateSelectorViewController, date:Date?)
+    //func selectedDate(sender: DateSelectorViewController, date:Date?)
 }
 
 protocol NewTravellerViewModelDeletage{
-    func addNewTraveller(sender: UIViewController, travellerViewModel:TravellerViewModel? )
+    //func addNewTraveller(sender: UIViewController, travellerViewModel:TravellerViewModel? )
 }
 
 protocol ModelDelegate: Codable {

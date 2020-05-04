@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CostTracker
+@testable import Splity
 
 class SplityTests: XCTestCase {
     
@@ -34,3 +34,9 @@ class SplityTests: XCTestCase {
     }
     
 }
+
+
+
+
+
+
